@@ -1,0 +1,236 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: rgb(243, 192, 192);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-position: center;
+  margin: 15px;
+  padding: 15px;
+  border: 10px rgb(80, 80, 148);
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: 0.4s;
+  width: 300px;
+  background: #444;
+  text-align: center;
+  font-size: 16px;
+  font-family: sans-serif;
+  float: left;
+  margin: 10px;
+}
+
+form {
+  background: rgb(155, 115, 115);
+  width: 450px;
+  border-radius: 25px;
+  height: 400px;
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 50px auto 50px;
+  box-shadow: 5px 5px 5px 5px white;
+}
+
+form h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+}
+
+label {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  display: inline-block;
+}
+input.textarea {
+  box-sizing: border-box;
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  resize: none;
+}
+
+#button-row {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  flex-grow: 1;
+  width: 125px;
+  margin: 25px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  height: 35px;
+  cursor: pointer;
+  color: rgb(52, 126, 126);
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: rgb(247, 242, 242);
+  min-height: 100px;
+  padding: 20px 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+footer .social_icon li a,
+footer .menu li {
+  font-size: 2rem;
+  color: black;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+footer .menu li a {
+  font-size: 1.2rem;
+  color: rgb(9, 9, 10);
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+footer menu li a:hover {
+  opacity: 1;
+}
+footer p {
+  color: rgb(65, 60, 60);
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.1en;
+}
+
+.contenedor-boton {
+  background-color: green;
+  border: 1px solid white;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 15px;
+  right: 25px;
+  padding: 25px;
+  transition: ease 0.3s;
+}
+.contenedor-boton:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.boton {
+  width: 50px;
+  transition: ease 1s;
+}
+.ver-carrito {
+  font-size: 25px;
+  background-position: center;
+  height: 100vh;
+  cursor: pointer;
+}
+
+.modal.container {
+  width: 80%;
+  margin: 0 10px;
+  max-height: 88vh;
+  color: #fff;
+  background-color: #12121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*for the*/
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+}
+.modal.container::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+.modal-header-title {
+  justify-self: start;
+}
+
+.modal-header-button {
+  cursor: pointer;
+}
+.modal.container > .modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+}
+.modal.container > div > img {
+  height: 120px;
+  width: 120px;
+}
+.total-content {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+/*delate button produc*/
+.delete-produc {
+  cursor: pointer;
+}
+.cantidad-carrito {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none;
+}
+.sumar {
+  cursor: pointer;
+}
+.restar {
+  cursor: pointer;
+}
